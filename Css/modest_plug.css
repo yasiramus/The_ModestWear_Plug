@@ -8,7 +8,8 @@
 html {
   scroll-behavior: smooth;
   font-size: 1rem;
-  font-family: "Mea Culpa", "cursive";
+  font-family: "cursive";
+  /* font-family: "Mea Culpa", "cursive"; */
   overflow-x: hidden;
 }
 /* Header Section */
@@ -25,8 +26,10 @@ header {
   font-weight: bolder;
   letter-spacing: 0.4rem;
   text-shadow: 2px 2px 3px black;
+  filter: drop-shadow(0 2px 5px rgba(0,0,0,.3));
   margin: 0 6rem 0 1rem;
   /* z-index: 2; */
+  font-family: "cursive";
 }
 #logo span {
   color: rgb(8, 250, 250);
@@ -34,9 +37,11 @@ header {
 /* navbar section */
 #navbar {
   display: flex;
-  gap: 2rem;
+  gap: 1.5rem;
+  font-size: .7rem;
   list-style: none;
-  margin-right: 10rem;
+  margin-right: 8rem;
+  transition: 0.4s;
   /* background: linear-gradient(
     130deg,#ff7a18,#af002d 41.07%,#319197 76.05%); */
   }
@@ -117,6 +122,7 @@ input:focus {
   cursor: pointer;
   background: none;
   border: none;
+  filter: drop-shadow(0 2px 5px rgba(0,0,0,.3));
 }
 .bar {
   display: block;
@@ -159,7 +165,7 @@ input:focus {
   top: 74px;
   left: 100%;
   width: 40%;
-  min-height: 70vh;
+  min-height: 58vh;
   z-index: 1;
   background-color:  rgb(64, 179, 131);
   padding-top: 60px;
@@ -180,7 +186,7 @@ input:focus {
   max-width: 200px;
   margin: 0 auto 16px;
   background-color: rgb(8, 250, 250);
-  font-size:2rem ;
+  font-size:1.5rem ;
   color: white;
 }
 .navMobile_hamburger a:hover {
@@ -269,12 +275,18 @@ input:focus {
   font-weight: lighter;
 }
 .recentText1 {
-  margin: left 50px;
+  /* margin: left 50px; */
   font-family: "cursive";
   font-size: 1.2rem;
   font-style: normal;
   font-weight: lighter;
   padding-left: 25px;
+}
+.recentText:hover{
+  color: #bbb;
+}
+.recentText1:hover{
+  color: #bbb;
 }
 #recentlyAddedImages {
   margin: 10px;
@@ -300,6 +312,7 @@ input:focus {
 }
 .Popular_Product:hover {
   cursor: pointer;
+  color: #bbb;
 }
 .fig1 {
   display: grid;
@@ -314,10 +327,10 @@ img {
 }
 figcaption {
   /* max-width: 400px; */
-  max-height: 300px;
+  height: 400px;
   border-radius: 10px;
   text-align: center;
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   padding: 0.8rem 0.8rem 5rem 0.8rem;
   background-color: rgb(64, 179, 131);
 }
@@ -348,7 +361,7 @@ figcaption a:hover {
   width: 800px;
   left: 23rem;
   padding: 30px;
-  font-size: 1.8rem;
+  font-size: 1.7rem;
   color: #ffffff;
   right: 0;
 }
@@ -357,7 +370,9 @@ figcaption a:hover {
 }
 .history p {
   color: rgb(238, 234, 234);
-  line-height: 50px;
+  line-height: 30px;
+  font-weight: 100;
+  font-size: 1.5rem;
   margin-bottom: 20px;
 }
 .history a {
@@ -400,7 +415,7 @@ figcaption a:hover {
 .next {
   cursor: pointer;
   position: absolute;
-  top: 182rem;
+  top: 203rem;
   padding: 16px 30px;
   color: #ffffff;
   font-weight: bolder;
@@ -450,7 +465,8 @@ figcaption a:hover {
 }
 .footer {
   padding-bottom: 20px;
-  letter-spacing: 5px;
+  letter-spacing: 3px;
+  font-size: 1.5rem;
 }
 
 /* for a screen size of 1200px */
@@ -483,8 +499,11 @@ figcaption a:hover {
     letter-spacing:2px;
   }
   .text {
-    column-gap: 20rem;
+    column-gap: 25rem;
   }
+  /* .recentText1{
+    padding-left:20px;
+  } */
   /* .recentText1 {
     margin-left: 120px;
   } */
@@ -513,13 +532,13 @@ figcaption a:hover {
   }
   .prev,
   .next{
-      top: 462rem;
+      top: 555rem;
       font-size: 2rem;
       padding: 16px 20px;
   }
   .footer {
     letter-spacing: 2px;
-    font-size: 2rem;
+    font-size: 1.5rem;
     padding: 0 50px;
     margin: 0 10px;
     padding-bottom: 20px;
@@ -558,8 +577,7 @@ figcaption a:hover {
   }
   .main_Image{
     margin: 0 10px 10px 10px;
-   height: 500px
-   ; 
+   height: 500px;
   }
   .main h1{
     padding: 10rem 0 4rem 0;
@@ -604,7 +622,7 @@ figcaption a:hover {
   }
   .prev,
   .next{
-      top: 460rem;
+      top: 490rem;
       font-size: 1.5rem;
       padding: 16px 20px;
   }
